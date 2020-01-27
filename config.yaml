@@ -1,0 +1,116 @@
+# Tranquilpeak
+# Version : 0.4.7-BETA
+# Author : Thibaud Leprêtre
+
+# I STRONGLY recommend you to use a CDN to speed up loading of pages.
+# There is many free CDN like Cloudinary or you can also use indirectly
+# by using services like Google Photos.
+
+# If you want to store images yourself, please read this guidelines:
+# For users, if you only use this theme, put your images directly in `source/assets/images` folder
+# But if you want to add local images, you can put your images directly in `source/assets/images` folder
+# For developpers, if you modify this theme, put your images in `source/images` folder and
+# use grunt task `build` to synchronize assets
+
+baseURL: 'https://n89cz.github.io/'
+defaultContentLanguage: en-us
+title: n89cz - personal notes - blog
+theme: hugo-tranquilpeak-theme
+disqusShortname: n89cz
+googleAnalytics: "UA-112567-1"
+paginate: 10
+canonifyurls: true
+
+permalinks:
+  post: '/:year/:month/:slug/'
+
+taxonomies:
+  tag: tags
+  category: categories
+  archive: archives
+
+author:
+  name: Martin Dusek
+  bio: DevOps
+  job: WEDOS Internet a. s.
+  location: Czech Republic
+  gravatarEmail: dusek@n89.cz
+
+languages:
+  en-us:
+    contentDir: content/en
+    languageCode: en-us
+    languageName: English
+    weight: 1
+
+    menu:
+      main:
+        - weight: 1
+          identifier: home
+          name: Home
+          pre: <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+          url: /
+
+        - weight: 2
+          identifier: about
+          name: About
+          pre: <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+          url: '/#about'
+
+        - weight: 6
+          identifier: archives
+          name: Archives
+          pre: <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
+          url: /archives
+
+      contact:
+        - weight: 1
+          identifier: github
+          name: GitHub
+          pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+          url: 'https://github.com/n89cz'
+
+        - weight: 2
+          identifier: dockerhub
+          name: Docker Hub
+          pre: <i class="sidebar-button-icon fa fa-lg fa-ship"></i>
+          url: 'https://hub.docker.com/u/n89cz/'
+
+      misc:
+        - weight: 1
+          identifier: telegram
+          name: Telegram me
+          pre: <i class="sidebar-button-icon fa fa-lg fa-paper-plane"></i>
+          url: 'https://t.me/martindusek'
+
+params:
+  syntaxHighlighter: highlight.js
+  clearReading: false
+  hierarchicalCategories: true
+  sidebarBehavior: 2
+  coverImage: images/sidebar.jpg
+  imageGallery: true
+  thumbnailImage: true
+  thumbnailImagePosition: bottom
+  autoThumbnailImage: true
+  favicon: "/favicon.ico"
+  #swapPaginator: true
+  customCSS:
+  - href: "../css/style.css"
+  sharingOptions:
+    - name: Facebook
+      icon: fa-facebook-official
+      url: 'https://www.facebook.com/sharer/sharer.php?u=%s'
+    - name: Twitter
+      icon: fa-twitter
+      url: 'https://twitter.com/intent/tweet?text=%s'
+  header:
+    rightLink:
+      class: ''
+      icon: ''
+      url: '/#about'
+  sidebar:
+    profile:
+      url: "/#about"
+  footer:
+    copyright: "<a href=\"https://github.com/n89cz\">Martin Dusek</a>"
