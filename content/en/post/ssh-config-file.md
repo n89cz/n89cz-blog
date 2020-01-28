@@ -1,6 +1,6 @@
 ---
 title: "SSH Config File"
-date: 2015-05-28
+date: 2020-01-28
 categories:
 - unix
 - ssh
