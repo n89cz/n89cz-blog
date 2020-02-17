@@ -10,7 +10,7 @@ tags:
 - tools
 - configuration
 thumbnailImagePosition: left
-thumbnailImage: images/kubernetes-logo.png
+thumbnailImage: images/kubernetes_logo.png
 ---
 Kubectx helps you switch between clusters. Then there is kubens which helps you switch easily between namespaces. 
 <!--more-->
